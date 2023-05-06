@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,viewport-fit=cover">
+    <title>选课平台</title>
+    <meta name="title" content="大技狮人才测评数据信息采集">
+    <meta name="keywords" content="人才招聘，就业辅导，职前培训，人才测评">
+    <meta name="description" content="为大学生提供就业和培训的科技平台">
+    <link rel="icon" type="image/x-icon" href="static/image/favicon.ico" />
+    <link rel="stylesheet" href="./static/css/idangerous.swiper.css">
+    <script src="./static/js/idangerous.swiper.min.js"></script>
+    <script>
+      (function(doc, win) {
+        var docEl = doc.documentElement,
+          resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+          recalc = function() {
+            var clientWidth = docEl.clientWidth;
+            if (!clientWidth) return;
+            if (clientWidth >= 750) {
+              docEl.style.fontSize = '32px';
+            } else {
+              docEl.style.fontSize = 16 * (clientWidth / 375) + 'px';
+            }
+          };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+      })(document, window);
+      function showPage(){
+      	document.body.style.visibility = 'visible';
+      };
+      setTimeout(showPage,2);
+    </script>
+  </head>
+  <body style="max-width: 750px;min-width: 370px;margin: 0 auto;">
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
